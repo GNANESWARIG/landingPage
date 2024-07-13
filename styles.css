@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+    background-color: #575757;
+    color: #fff;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+#home {
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.QJgEAxuWXgEm8zvta988iAHaEK&pid=Api&P=0&h=180/1920x1080');
+
+}
+
+#about {
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.wyO7e7BJ4dpE208bKsC7CAHaE8&pid=Api&P=0&h=180/1920x1080');
+}
+
+#services {
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.QJgEAxuWXgEm8zvta988iAHaEK&pid=Api&P=0&h=180/1920x1080');
+}
+
+#contact {
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.wyO7e7BJ4dpE208bKsC7CAHaE8&pid=Api&P=0&h=180/1920x1080');
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item a {
+        padding: 10px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
